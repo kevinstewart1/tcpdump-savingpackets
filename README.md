@@ -35,3 +35,7 @@ Using CTRL+C will stop the process and it should return a summary of the number 
 <br/>
 We can read from this file using tcpdump now, using this command: "tcpdump -r http.pcap -nv"
 <img src="https://i.imgur.com/BDDcJof.png" height="60%" width="60%"<br/>
+<br/>
+<br/>
+ Reading that file we can see there's information about the packets created when I pulled down the html from example.com. Tcpdump writes full packets to the file, not just the text-based analysis that it prints to the screen. For example, in the output you can see the html that was returned as the body of the original query in the terminal.
+ <img src="https://i.imgur.com/rNnnnEJ.png" height="60%" width="60%"<br/>
